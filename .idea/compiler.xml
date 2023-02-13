@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="selenium_webdriver_basic" target="1.6" />
+      <module name="selenium_webdriver_basic" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
