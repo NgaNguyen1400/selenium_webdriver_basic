@@ -23,8 +23,13 @@ public class FromInteractionMultipleMatching {
             List<WebElement> loginFromFieledsElem = driver.findElements(loginInputFiedledSel);
             final int USERNAME_INDEX=0;
             final int PASSWORD_INDEX=1;
-            loginFromFieledsElem.get(USERNAME_INDEX).sendKeys("teo@sth.com");
-            loginFromFieledsElem.get(PASSWORD_INDEX).sendKeys("12345678");
+            if(loginFromFieledsElem.isEmpty()){
+                loginFromFieledsElem.get(USERNAME_INDEX).sendKeys("teo@sth.com");
+                loginFromFieledsElem.get(PASSWORD_INDEX).sendKeys("12345678");
+
+            }else {
+                //Assert.fail()
+            }
 
             //DEBUG PURPOSE ONLY
             Thread.sleep(2000);
