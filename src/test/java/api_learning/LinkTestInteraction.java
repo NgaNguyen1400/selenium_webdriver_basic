@@ -15,7 +15,7 @@ public class LinkTestInteraction {
             driver.get("https://the-internet.herokuapp.com/login");
 
             //C1:Define selector values
-            //    By poweredByLinkTextSel= By.linkText("Elemental Selenium");
+        //    By poweredByLinkTextSel= By.linkText("Elemental Selenium");
             By poweredByLinkTextSel= By.partialLinkText("Elemental ");
 
 

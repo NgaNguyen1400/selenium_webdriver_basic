@@ -4,6 +4,7 @@ import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
+import support.ui.SelectEx;
 import url.Urls;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +23,9 @@ public class Dropdown implements Urls {
             WebElement dropdownElem= driver.findElement(dropdownSel);
 
             // Select dropdown
-            Select select =new Select(dropdownElem);
+           // Select select =new Select(dropdownElem);
+            SelectEx select= new SelectEx(dropdownElem);
+            select.selectOption1();//= selectByVisibleText("Option 1");
 
             //C1.select by visible text| Option1
             select.selectByVisibleText("Option 1");

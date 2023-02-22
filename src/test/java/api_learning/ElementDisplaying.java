@@ -19,6 +19,7 @@ public class ElementDisplaying {
         //cách 1: try-catch
        /* Exception e= null;
         try {
+
             //Navigate
             driver.get("https://the-internet.herokuapp.com/login");
             //Define selector values
@@ -28,6 +29,7 @@ public class ElementDisplaying {
         }catch (NoSuchElementException noSuchElementException){
             e = noSuchElementException;
         }
+
         if(e==null) {
             Assert.fail("The element abc still displaying on the page");
         }*/
@@ -39,8 +41,8 @@ public class ElementDisplaying {
 
 
 
-            //Quit the browser
-            driver.quit();
+        //Quit the browser
+        driver.quit();
 
     }
 }
