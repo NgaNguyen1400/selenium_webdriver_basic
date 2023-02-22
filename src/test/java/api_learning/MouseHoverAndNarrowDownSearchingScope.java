@@ -61,10 +61,6 @@ public class MouseHoverAndNarrowDownSearchingScope implements Urls {
             }
 
 
-
-
-
-
         }catch(Exception e){
             e.printStackTrace();
         }
